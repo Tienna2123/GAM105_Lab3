@@ -49,5 +49,10 @@ public class SquareController : MonoBehaviour
             Debug.Log("Win");
             LoadNextScene();
         }
+        if (collision.gameObject.name.Equals("SpinWheel"))
+        {
+            Vector2 firstPosition = new Vector2(-5, 0);
+            transform.position = firstPosition;
+        }
     }
 }
